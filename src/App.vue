@@ -1,9 +1,16 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+// import { RouterLink, RouterView } from "vue-router";
+// import HelloWorld from "./components/HelloWorld.vue";
+import NavBar from "./components/NavBar.vue"
 </script>
 
 <template>
+  <NavBar/>
+  <RouterView />
+</template>
+
+<style scoped></style>
+<!-- <template>
   <header>
     <img
       alt="Vue logo"
@@ -88,4 +95,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->
