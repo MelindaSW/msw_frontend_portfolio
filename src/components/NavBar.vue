@@ -1,15 +1,15 @@
 <template lang="">
     <nav>
+        <a class="nav-link-home" href=""><img src="./icons/home_icon.png" alt="home"></a>
        <div class="nav-links"> 
-            <a class="nav-link" href="">Start</a>
             <a class="nav-link" href="">About</a>
             <a class="nav-link" href="">Projects</a>
             <a class="nav-link" href="">Contact</a>
        </div>
         <ul class="icon-links">
-            <li><a href="https://github.com/MelindaSW" target="_blank"><img src="./icons/github_icon.png" alt=""></a></li>
-            <li><a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/" target="_blank"><img src="./icons/linkedin_icon.png" alt=""></a></li>
-            <li><a href="https://www.instagram.com/melindas_crosshatching/" target="_blank"><img src="./icons/instagram_icon.png" alt=""></a></li>
+            <li><a href="https://github.com/MelindaSW" target="_blank"><img src="./icons/github_icon.png" alt="gihub"></a></li>
+            <li><a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/" target="_blank"><img src="./icons/linkedin_icon.png" alt="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/melindas_crosshatching/" target="_blank"><img src="./icons/instagram_icon.png" alt="instagram"></a></li>
         </ul>
     </nav>
 </template>
@@ -39,8 +39,14 @@
         padding: 0px;
     }
 
+    .nav-link-home {
+        align-self: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
     .nav-links {
-        margin-top: 78px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         /* align-items:center; */
@@ -48,21 +54,12 @@
     }
 
      a.nav-link {
-        /* position: relative; */
-        /* align-items: center; */
         transform: rotate(-90deg);
         text-transform: uppercase;
         margin-bottom: 55px;
         margin-top: 10px;
         text-decoration: none;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        /* text-orientation:sideways-right;
-        vertical-align: top;
-        text-align: start; */
-
     }   
-
 
     img {
         width: 30px;
