@@ -32,6 +32,7 @@
         flex-direction: column;
         justify-content:space-between;
         align-items: center;
+        z-index: 50;
     }
 
     ul {
@@ -46,14 +47,14 @@
     }
 
     .nav-links {
-        margin-top: 30px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
-        /* align-items:center; */
         justify-content: space-evenly;
     }
 
      a.nav-link {
+        color:black;
         transform: rotate(-90deg);
         text-transform: uppercase;
         margin-bottom: 55px;
@@ -66,9 +67,15 @@
         height: 30px;
         margin-top: 19px;
         align-self: flex-end;
+        transition: transform 0.5s;
+    }
+
+    img:hover {
+        transform: scale(1.2, 1.2)
     }
 
     a:hover {
+    
     }
 
     .icon-links {
