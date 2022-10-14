@@ -1,5 +1,7 @@
 <template lang="">
     <nav>
+        <img class="burger_menu" src="./icons/burger_menu_icon.png" alt="">
+
         <a class="nav-link-home" href=""><img src="./icons/home_icon.png" alt="home"></a>
        <div class="nav-links"> 
             <a class="nav-link" href="">About</a>
@@ -21,6 +23,7 @@
 </script>
 
 <style scoped>
+
     nav {
         width: 82px;
         height: 100vh;
@@ -33,6 +36,10 @@
         justify-content:space-between;
         align-items: center;
         z-index: 50;
+    }
+
+    .burger_menu {
+        display: none;
     }
 
     ul {
@@ -60,6 +67,7 @@
         margin-bottom: 55px;
         margin-top: 10px;
         text-decoration: none;
+        transition: color 0.5s;
     }   
 
     img {
@@ -71,14 +79,79 @@
     }
 
     img:hover {
-        transform: scale(1.2, 1.2)
+        transform: scale(1.2, 1.2);
     }
 
     a:hover {
-    
+        color: #6380ca;
     }
 
     .icon-links {
         margin-bottom: 78px;
     }
+
+    @media (max-width: 560px) {
+        .burger_menu {
+            display: block;
+            margin: auto;
+        }
+
+        nav {
+            flex-direction: row;
+            height: 55px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .nav-link-home {
+            display: none;
+        }
+        .nav-links {
+            display: none;
+        }
+        .icon-links {
+           display: flex; 
+           margin: auto;
+           justify-content: center; 
+           align-items: center;
+           line-height: 0px;
+
+        }
+        li {
+            display: inline;
+            margin: 0px;
+        }
+        img {
+            margin: 0px 0px 0px 20px;
+        }
+        a {
+            margin: 0px;
+        }
+    }
 </style>
+
+
+<!-- Scroll into view example: -->
+<!-- <template>
+  <div id="app">
+    <button @click="scrollToElement">scroll to last</button>
+    <p v-for="n of 100" :key="n" :ref="n === 100 ? 'last' : undefined">
+      {{ n }}
+    </p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "App",
+  methods: {
+    scrollToElement() {
+      const [el] = this.$refs.last;
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  },
+};
+</script> -->
