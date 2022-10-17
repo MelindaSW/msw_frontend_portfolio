@@ -1,4 +1,15 @@
-<template lang="">
+<script lang="ts">
+    export default {
+        data: () => ({
+            displayBMenu: false
+        }),
+        methods: {
+            toggleBMenu () { this.displayBMenu = !this.displayBMenu },
+        }
+    }
+</script>
+
+<template>
     <nav>
         <img class="burger_menu" @click="toggleBMenu" src="./icons/burger_menu_icon.png" alt="">
         <ul v-if="displayBMenu" class="burger-links">
@@ -22,17 +33,6 @@
         </ul>
     </nav>
 </template>
-
-<script lang="ts">
-    export default {
-        data: () => ({
-            displayBMenu: false
-        }),
-        methods: {
-            toggleBMenu () { this.displayBMenu = !this.displayBMenu },
-        }
-    }
-</script>
 
 <style scoped>
 
@@ -111,9 +111,8 @@
 
         .burger-links {
             border-radius: 50%;
-            border: 1px solid black;
             display: block;
-            position: absolute;
+            position: fixed;
             z-index: 100;
             left: 13px;
             top: 70px;
@@ -130,7 +129,7 @@
         }
 
         .burger-links:hover {
-            border: 1px solid #6380ca;
+            box-shadow: 0px 0px 5px #6380ca92;
         }
 
         nav {
