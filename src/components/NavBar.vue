@@ -1,12 +1,12 @@
 <template lang="">
     <nav>
-            <img class="burger_menu" @click="toggleBMenu" src="./icons/burger_menu_icon.png" alt="">
-            <ul v-if="displayBMenu" class="burger-links">
-                <li><a class="b-link" @click="toggleBMenu" href="">Home</a></li>
-                <li><a class="b-link" @click="toggleBMenu" href="">About</a></li>
-                <li><a class="b-link" @click="toggleBMenu" href="">Projects</a></li>
-                <li><a class="b-link" @click="toggleBMenu" href="">Contact</a></li>
-            </ul>
+        <img class="burger_menu" @click="toggleBMenu" src="./icons/burger_menu_icon.png" alt="">
+        <ul v-if="displayBMenu" class="burger-links">
+            <li><a class="b-link" @click="toggleBMenu" href="">Home</a></li>
+            <li><a class="b-link" @click="toggleBMenu" href="">About</a></li>
+            <li><a class="b-link" @click="toggleBMenu" href="">Projects</a></li>
+            <li><a class="b-link" @click="toggleBMenu" href="">Contact</a></li>
+        </ul>
 
         <a class="nav-link-home" href=""><img src="./icons/home_icon.png" alt="home"></a>
         <div class="nav-links"> 
@@ -14,7 +14,7 @@
             <a class="nav-link" href="">Projects</a>
             <a class="nav-link" href="">Contact</a>
         </div>
-        
+
         <ul class="icon-links">
             <li><a href="https://github.com/MelindaSW" target="_blank"><img src="./icons/github_icon.png" alt="gihub"></a></li>
             <li><a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/" target="_blank"><img src="./icons/linkedin_icon.png" alt="linkedin"></a></li>
@@ -110,16 +110,27 @@
         }
 
         .burger-links {
+            border-radius: 50%;
+            border: 1px solid black;
             display: block;
-            margin-top: 170px;
-            margin-left: 20px;
+            position: absolute;
+            z-index: 100;
+            left: 13px;
+            top: 70px;
+            background-color: #FFFFFF;
+            padding: 16px;
+            text-align: center;
         }
 
         .b-link {            
             text-decoration: none;
-            /* margin-left: 20px; */
             color: black;
             text-transform: uppercase;
+            margin: 20px;
+        }
+
+        .burger-links:hover {
+            border: 1px solid #6380ca;
         }
 
         nav {
@@ -159,6 +170,7 @@
         a {
             margin: 0px;
         }
+
     }
 </style>
 
