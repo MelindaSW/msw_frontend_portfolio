@@ -1,14 +1,12 @@
 <template lang="">
     <nav>
-        <div id="burger-menu-container">
-            <img class="burger_menu" src="./icons/burger_menu_icon.png" alt="">
+            <img class="burger_menu" @click="toggleBMenu" src="./icons/burger_menu_icon.png" alt="">
             <ul v-if="displayBMenu" class="burger-links">
-                <li><a class="b-link" href="">Home</a></li>
-                <li><a class="b-link" href="">About</a></li>
-                <li><a class="b-link" href="">Projects</a></li>
-                <li><a class="b-link" href="">Contact</a></li>
+                <li><a class="b-link" @click="toggleBMenu" href="">Home</a></li>
+                <li><a class="b-link" @click="toggleBMenu" href="">About</a></li>
+                <li><a class="b-link" @click="toggleBMenu" href="">Projects</a></li>
+                <li><a class="b-link" @click="toggleBMenu" href="">Contact</a></li>
             </ul>
-        </div>
 
         <a class="nav-link-home" href=""><img src="./icons/home_icon.png" alt="home"></a>
         <div class="nav-links"> 
@@ -16,6 +14,7 @@
             <a class="nav-link" href="">Projects</a>
             <a class="nav-link" href="">Contact</a>
         </div>
+        
         <ul class="icon-links">
             <li><a href="https://github.com/MelindaSW" target="_blank"><img src="./icons/github_icon.png" alt="gihub"></a></li>
             <li><a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/" target="_blank"><img src="./icons/linkedin_icon.png" alt="linkedin"></a></li>
@@ -26,7 +25,12 @@
 
 <script lang="ts">
     export default {
-        
+        data: () => ({
+            displayBMenu: false
+        }),
+        methods: {
+            toggleBMenu () { this.displayBMenu = !this.displayBMenu },
+        }
     }
 </script>
 
@@ -46,11 +50,7 @@
         z-index: 50;
     }
 
-    .burger-menu-container {
-        display: none;
-    }
-
-    .burger_menu {
+    .burger_menu, .burger-links {
         display: none;
     }
 
@@ -103,13 +103,23 @@
     }
 
     @media (max-width: 560px) {
-        .burger-menu-container {
-            display: block;
-            margin: auto;
-        }
-        
         .burger_menu {
             display: block;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        .burger-links {
+            display: block;
+            margin-top: 170px;
+            margin-left: 20px;
+        }
+
+        .b-link {            
+            text-decoration: none;
+            /* margin-left: 20px; */
+            color: black;
+            text-transform: uppercase;
         }
 
         nav {
@@ -120,12 +130,15 @@
             align-items: center;
             justify-content: space-evenly;
         }
+
         .nav-link-home {
             display: none;
         }
+
         .nav-links {
             display: none;
         }
+
         .icon-links {
            display: flex; 
            margin: auto;
@@ -133,13 +146,16 @@
            align-items: center;
            line-height: 0px;
         }
+
         .icon-links > li {
             display: inline;
             margin: 0px;
         }
+
         img {
             margin: 0px 0px 0px 20px;
         }
+
         a {
             margin: 0px;
         }
