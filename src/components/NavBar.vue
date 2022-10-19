@@ -19,7 +19,9 @@
             <li><a class="b-link" @click="toggleBMenu" href="">Contact</a></li>
         </ul>
 
-        <a class="nav-link-home" href=""><img src="./icons/home_icon.png" alt="home"></a>
+        <a class="nav-link-home" href="">
+            <img src="./icons/home_icon.png" alt="home">
+        </a>
         <div class="nav-links"> 
             <a class="nav-link" href="">About</a>
             <a class="nav-link" href="">Projects</a>

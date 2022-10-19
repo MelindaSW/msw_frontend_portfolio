@@ -2,14 +2,26 @@
 // import { RouterLink, RouterView } from "vue-router";
 // import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from "./components/NavBar.vue"
+import Home from "./components/Home.vue"
 </script>
 
 <template>
   <NavBar/>
-  <RouterView />
+
+  <main>
+    <Home/>
+  </main>
+  <!-- <RouterView /> -->
 </template>
 
-<style scoped></style>
+<style scoped>
+  main {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    position: absolute; 
+  }
+</style>
 <!-- <template>
   <header>
     <img
