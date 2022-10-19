@@ -13,7 +13,6 @@ export default {
 <style scoped>
     #contactcontainer {
         background-color: white;
-        height: 100vh;
         display: flex;
         justify-content: center;
     }

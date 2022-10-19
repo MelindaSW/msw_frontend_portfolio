@@ -6,13 +6,12 @@
 
 <script lang="ts">
 export default {
-    
+
 }
 </script>
 
 <style scoped>
     #projectscontainer {
-        height: 100vh;
         display: flex;
         justify-content: center;
     }

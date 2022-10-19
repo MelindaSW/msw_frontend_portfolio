@@ -13,7 +13,6 @@
 <style scoped>
     #aboutcontainer {
         background-color: white;
-        height: 100vh;
         display: flex;
         justify-content: center;
     }

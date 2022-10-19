@@ -20,10 +20,11 @@
 
 <style scoped>
   main {
-    margin-top: 55px;
+    /* margin-top: 55px; */
     display: flex;
     flex-direction: column;
-    position: absolute; 
+    position: absolute;
+    top: 55px; 
   }
 </style>
 <!-- <template>

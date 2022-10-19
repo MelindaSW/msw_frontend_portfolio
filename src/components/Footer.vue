@@ -20,7 +20,12 @@ export default {
         align-items: center;
         padding: 20px;
         text-align: center;
+        /* position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;  */
     }
+
     a {
         text-decoration: none;
         color: #6380ca92;

@@ -47,7 +47,7 @@
         position: fixed;
         display: flex;
         flex-direction: column;
-        justify-content:space-between;
+        justify-content: space-between;
         align-items: center;
         z-index: 50;
     }
