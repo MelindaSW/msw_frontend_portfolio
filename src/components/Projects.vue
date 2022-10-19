@@ -1,6 +1,6 @@
 <template>
-    <div id="contactcontainer">
-        <h1>Contact</h1>
+    <div id="projectscontainer">
+        <h1>Projects</h1>
     </div>
 </template>
 
@@ -11,8 +11,7 @@ export default {
 </script>
 
 <style scoped>
-    #contactcontainer {
-        background-color: white;
+    #projectscontainer {
         height: 100vh;
         display: flex;
         justify-content: center;

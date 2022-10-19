@@ -112,6 +112,7 @@
         }
 
         .burger-links {
+            box-shadow: 0px 0px 5px #6380ca92;
             border-radius: 50%;
             display: block;
             position: fixed;
@@ -128,10 +129,6 @@
             color: black;
             text-transform: uppercase;
             margin: 20px;
-        }
-
-        .burger-links:hover {
-            box-shadow: 0px 0px 5px #6380ca92;
         }
 
         nav {

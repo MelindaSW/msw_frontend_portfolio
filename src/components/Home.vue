@@ -5,7 +5,7 @@
         <h2>Software developer</h2>
         <p>
             Hi and welcome to my portfolio!
-            I am a junior software developer consultant, working mainly with Java, Javascript and related frameworks.         
+            I am a junior software developer consultant with a passion for web development.
         </p>
         <p>
             Here you can find a <a href="">selection of projects</a> and <a href="">more information</a> about me.
@@ -34,12 +34,6 @@ export default {
         margin-top: 2rem
     }
 
-    h1 {
-        font-weight: 500;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        margin-top: 1rem;
-    }
     h2 {
         text-transform: uppercase;
         font-size: 1.1rem;
@@ -58,13 +52,15 @@ export default {
         font-weight: bold;
     }
 
-    /* For wider wiewports: */
     #scrolldownicon {
+        background-color: #6380ca92;
+        border-radius: 50%;
         width: 30px;
         cursor: pointer;
         position: sticky;
         margin: auto;
-        display: none;
+        padding: 5px;
+        /* display: none; */
     }
 
 </style>

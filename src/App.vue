@@ -1,17 +1,21 @@
 <script setup lang="ts">
-// import { RouterLink, RouterView } from "vue-router";
-// import HelloWorld from "./components/HelloWorld.vue";
-import NavBar from "./components/NavBar.vue"
-import Home from "./components/Home.vue"
+  import NavBar from "./components/NavBar.vue"
+  import Home from "./components/Home.vue"
+  import About from "./components/About.vue"
+  import Projects from "./components/Projects.vue"
+  import Contact from "./components/Contact.vue"
+  import Footer from "./components/Footer.vue"
 </script>
 
 <template>
   <NavBar/>
-
   <main>
     <Home/>
+    <About/>
+    <Projects/>
+    <Contact/>
+    <Footer/>
   </main>
-  <!-- <RouterView /> -->
 </template>
 
 <style scoped>

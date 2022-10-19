@@ -8,6 +8,13 @@
   font-weight: normal;
 }
 
+h1 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
 /* a,
 .green {
   text-decoration: none;

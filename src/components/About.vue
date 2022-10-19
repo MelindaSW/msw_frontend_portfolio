@@ -1,6 +1,6 @@
 <template lang="">
-    <div>
-        
+    <div id="aboutcontainer">
+        <h1>About</h1>
     </div>
 </template>
 
@@ -10,6 +10,12 @@
     }
 </script>
 
-<style lang="">
-    
+<style scoped>
+    #aboutcontainer {
+        background-color: white;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
 </style>
