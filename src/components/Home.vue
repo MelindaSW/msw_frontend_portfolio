@@ -53,13 +53,13 @@ export default {
     }
 
     #scrolldownicon {
-        background-color: #6380ca92;
+        background-color: white;
         border-radius: 50%;
-        width: 30px;
+        width: 35px;
         cursor: pointer;
         position: sticky;
         margin: auto;
-        padding: 5px;
+        padding: 9px;
         /* display: none; */
     }
 
