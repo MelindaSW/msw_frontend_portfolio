@@ -17,6 +17,12 @@
         <p>
             GitHub | Docker | Azure DevOps | Maven 
         </p>
+        <h2>Education</h2>
+            <ul>
+                <li>Java EE developer - YRGO Gothenburg - 2018-2020</li>
+                <li>Historical clothing and theatre tailoring - Cutters Academy Gothenburg - 2010-2012</li>
+                <li>Women's tailoring - KY Tailoring - 2007-2009</li>
+            </ul>
     </div>
 </template>
 
@@ -38,9 +44,16 @@
 
     h2 {
         text-transform: uppercase;
+        margin-top: 1.2rem;
     }
 
     p {
+        padding: 1.5rem;
+    }
+
+    ul {
+        /* text-align: left; */
+        list-style:disc;
         padding: 2rem;
     }
 
