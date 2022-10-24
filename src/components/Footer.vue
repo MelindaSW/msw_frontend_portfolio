@@ -1,7 +1,7 @@
 <template >
     <footer>
         <p> 
-            This portfolio was created with Vue.js 3 and Vite.
+            This portfolio was created by me. Using Vue 3 and Vite.
             See the source code <a href="https://github.com/MelindaSW/msw_frontend_portfolio" target="_blank">here</a>.
         </p>
     </footer>
