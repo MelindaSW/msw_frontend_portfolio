@@ -47,7 +47,7 @@
             <h3>{{p.title}}</h3>
             <p>{{p.description}}</p>
             <p id="techp">
-                <span class="tech" v-for="(t, i) in p.tech" :key="i">{{t}}</span>
+                <div class="tech" v-for="(t, i) in p.tech" :key="i">{{t}}</div>
             </p>
             <p>
                 <a :href="p.repo">REPOSITORY</a> {{  }}
@@ -77,7 +77,7 @@
         border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 87%;
         margin-top: 1rem;
         margin-bottom: 1rem;
         padding: 1rem;
@@ -93,6 +93,9 @@
     }
 
     #techp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
     }
 
@@ -100,6 +103,7 @@
         background-color: #DFDFDF;
         border-radius: 3px;
         margin-left: 5px;
+        margin-top: 5px;
         padding-left: 3px;
         padding-right: 3px;
     }
