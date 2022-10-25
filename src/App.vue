@@ -4,7 +4,7 @@ import HomeView from "./components/HomeView.vue";
 import AboutView from "./components/AboutView.vue";
 import ProjectsView from "./components/ProjectsView.vue";
 import ContactView from "./components/ContactView.vue";
-import Footer from "./components/Footer.vue";
+import FooterView from "./components/FooterView.vue";
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import Footer from "./components/Footer.vue";
     <AboutView />
     <ProjectsView />
     <ContactView />
-    <Footer />
+    <FooterView />
   </main>
 </template>
 
