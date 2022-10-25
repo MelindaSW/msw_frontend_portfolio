@@ -18,5 +18,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
-  rules: { "prettier/prettier": ["error", { endOfLine: "auto" }] },
+  rules: {
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
+    "vue/multi-word-component-names": 0,
+  },
 };
