@@ -32,6 +32,43 @@ export default {
         ],
         img: "ps2.png",
       },
+      {
+        title: "Personal website",
+        repo: "https://github.com/MelindaSW/melindasw.se-sourcecode",
+        description: "My previous portfolio and personal website.",
+        url: "https://melindasw.netlify.app/",
+        tech: [
+          "Vue.js 2",
+          "Vue CLI",
+          "Node",
+          "JavaScript",
+          "vue-router",
+          "Vuetify",
+          "Sass",
+        ],
+        img: "melindaswse.jpg",
+      },
+      {
+        title: "Poetry Slack",
+        repo: "https://github.com/wasse/slack-poem",
+        description:
+          "This web applicaion was a school group project for the project and entreprenourship course at YRGO. It is using Slacks API and the applications own backend. Based on the content of the selected channel conversation it generates different kinds of poetry and the user can then choose to post it in the desired channel",
+        url: "",
+        tech: [
+          "JavaScript",
+          "React.js",
+          "Java EE",
+          "TomEE (Tomcat)",
+          "REST",
+          "Maven",
+          "Swagger",
+          "Postgresql",
+          "Mobx",
+          "Bulma",
+          "Sass",
+        ],
+        img: "ps2.png",
+      },
       // {
       //     title: "",
       //     repo: "",
@@ -77,6 +114,8 @@ export default {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2.7rem;
 }
 
 h3 {
@@ -102,6 +141,7 @@ p {
 
 img {
   border-radius: 0.5rem;
+  border: 1.5px solid #dfdfdf;
   width: 100%;
 }
 

@@ -37,6 +37,8 @@ export default {};
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding-top: 2.3rem;
+  padding-bottom: 2.7rem;
 }
 
 h2 {
@@ -50,7 +52,21 @@ p {
 
 ul {
   /* text-align: left; */
-  list-style: disc;
-  padding: 2rem;
+  list-style: none;
+  padding: 1.2rem;
+}
+
+li {
+  margin-top: 16px;
+}
+
+@media (min-width: 561px) {
+  /* #homecontainer {
+  padding-top: ;
+ } */
+
+  img {
+    width: 166px;
+  }
 }
 </style>

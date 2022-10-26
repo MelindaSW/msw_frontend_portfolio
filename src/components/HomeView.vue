@@ -1,18 +1,22 @@
 <template lang="">
   <div id="homecontainer">
-    <img id="profilepic" src="../assets/profilepic-circle.png" />
-    <h1>Melinda S-Wagner</h1>
-    <h2>Software developer</h2>
-    <p>
-      Hi and welcome to my portfolio! I am a junior software developer
-      consultant with a passion for web development.
-    </p>
-    <p>
-      Here you can find a <a href="">selection of projects</a> and
-      <a href="">more information</a> about me. If you have any questions or
-      simply want to get in touch, <a href="">email me</a> and I will answer as
-      soon as possible!
-    </p>
+    <div id="head">
+      <img id="profilepic" src="../assets/profilepic-circle.png" />
+    </div>
+    <div id="presentation">
+      <h1>Melinda S-Wagner</h1>
+      <h2>Software developer</h2>
+      <p>
+        Hi and welcome to my portfolio! <br />I am a junior software developer
+        consultant with a passion for web development.
+      </p>
+      <p>
+        Here you can find a <a href="">selection of projects</a> and
+        <a href="">more information</a>. If you have any questions or want to
+        reach out, <a href="">email me</a> and I will answer as soon as
+        possible!
+      </p>
+    </div>
     <img id="scrolldownicon" src="./icons/scrollarrowtodown_icon.png" alt="" />
   </div>
 </template>
@@ -23,10 +27,23 @@ export default {};
 
 <style scoped>
 #homecontainer {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2.7rem;
+}
+
+#head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #profilepic {
@@ -58,8 +75,66 @@ a {
   width: 35px;
   cursor: pointer;
   position: sticky;
-  margin: auto;
+  margin: 3rem auto;
   padding: 9px;
-  /* display: none; */
+}
+
+@media (min-width: 561px) {
+  #homecontainer {
+    width: 75%;
+    margin: auto;
+  }
+
+  #profilepic {
+    width: 330px;
+  }
+}
+
+@media (min-width: 800px) {
+  #homecontainer {
+    height: 100vh;
+    width: 60%;
+  }
+
+  #scrolldownicon {
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #homecontainer {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  #presentation {
+    align-items: baseline;
+    padding-left: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  h1 {
+    font-size: x-large;
+    align-items: stretch;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
+  #profilepic {
+    width: 360px;
+    padding-bottom: 5rem;
+  }
+
+  #scrolldownicon {
+    /* width: 50px; */
+    position: relative;
+    /* align-self: center; */
+    /* justify-self: center; */
+  }
 }
 </style>

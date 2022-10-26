@@ -20,10 +20,16 @@ import FooterView from "./components/FooterView.vue";
 
 <style scoped>
 main {
-  /* margin-top: 55px; */
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 55px;
+}
+
+@media (min-width: 561px) {
+  main {
+    margin-left: 60px;
+    top: 0px;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-// https://getform.io/
+// using https://getform.io/
 
 import axios from "axios";
 
@@ -53,7 +53,14 @@ export default {
 <template>
   <div id="contactcontainer">
     <h1>Contact</h1>
-
+    <p class="info">
+      Thank you for reading this far! If you want to get in touch, you can reach
+      me on
+      <a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/"
+        >Linkedin</a
+      >, <a href="mailto:sandstrommelinda@gmail.com">email me</a>, or send a
+      quick message here.
+    </p>
     <div class="form">
       <form
         enctype="multipart/form-data"
@@ -65,7 +72,7 @@ export default {
             v-model="name"
             type="text"
             name="name"
-            placeholder="Your name"
+            placeholder="Your Name"
           />
         </div>
         <div class="form-group">
@@ -73,7 +80,7 @@ export default {
             v-model="email"
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Your Email"
           />
         </div>
         <div class="form-group">
@@ -101,6 +108,14 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 2.3rem;
+  padding-bottom: 2.7rem;
+}
+
+.info {
+  width: 80%;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 form {
@@ -125,6 +140,7 @@ form {
 }
 
 input {
+  font-size: 0.8rem;
   border-radius: 5px;
   border: none;
   margin: auto;
@@ -133,22 +149,25 @@ input {
 }
 
 #message {
+  font-family: sans-serif;
+  font-size: 0.8rem;
   margin: auto;
   color: #455889;
   border-radius: 5px;
   border: none;
   padding: 15px;
+  resize: none;
 }
 
 button {
-  background-color: white;
-  color: #455889;
-  font-weight: bold;
+  background-color: #455889;
+  color: white;
+  /* font-weight: bold; */
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
   margin-top: 1rem;
-  padding: 5px 10px;
+  padding: 7px 15px;
 }
 
 input:focus,
@@ -156,5 +175,11 @@ textarea:focus {
   outline: none !important;
   border: 1px solid #455889;
   box-shadow: 0 0 10px #719ece;
+}
+
+a {
+  text-decoration: none;
+  color: #6380ca92;
+  font-weight: bold;
 }
 </style>
