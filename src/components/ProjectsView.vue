@@ -27,7 +27,7 @@ export default {
         </div>
         <p>
           <a :href="p.repo">REPOSITORY</a> {{}}
-          <a v-if="p.url" :href="p.url">VIEW IT LIVE</a>
+          <a v-if="p.url" :href="p.url" target="_blank">VIEW IT LIVE</a>
         </p>
       </div>
     </div>
@@ -72,8 +72,9 @@ h3 {
 
 .projectcard {
   background-color: white;
-  border-radius: 0.5rem;
-  border: 5px solid #dfdfdf;
+  /* border-radius: 0.5rem; */
+  border-top: 5px solid #dfdfdf;
+  border-left: 5px solid #dfdfdf;
   display: flex;
   flex-direction: column;
   width: 87%;
@@ -91,7 +92,6 @@ img {
   border-radius: 0.5rem;
   border: 1.5px solid #dfdfdf;
   width: 100%;
-  height: 50%;
 }
 
 #techp {

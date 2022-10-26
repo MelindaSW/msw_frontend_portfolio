@@ -53,8 +53,8 @@ export default {
   <div id="contactcontainer">
     <h1>Contact</h1>
     <p class="info">
-      Thank you for reading this far! If you want to get in touch, you can reach
-      me on
+      Thank you for reading this far! <br />If you want to get in touch, you can
+      reach me on
       <a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/"
         >Linkedin</a
       >, <a href="mailto:sandstrommelinda@gmail.com">email me</a>, or send a
@@ -112,6 +112,7 @@ export default {
 }
 
 .info {
+  font-size: 1.2em;
   width: 80%;
   margin-top: 1rem;
   text-align: center;
