@@ -41,7 +41,6 @@ export default {
             this.loading = false;
           },
           (response: any) => {
-            // Error
             console.log(response);
           }
         );

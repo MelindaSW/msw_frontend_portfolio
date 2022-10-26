@@ -20,19 +20,31 @@ export default {
       alt=""
     />
     <ul v-if="displayBMenu" class="burger-links">
-      <li><a class="b-link" @click="toggleBMenu" href="">Home</a></li>
-      <li><a class="b-link" @click="toggleBMenu" href="">About</a></li>
-      <li><a class="b-link" @click="toggleBMenu" href="">Projects</a></li>
-      <li><a class="b-link" @click="toggleBMenu" href="">Contact</a></li>
+      <li>
+        <a class="b-link" @click="toggleBMenu" href="#homecontainer">Home</a>
+      </li>
+      <li>
+        <a class="b-link" @click="toggleBMenu" href="#aboutcontainer">About</a>
+      </li>
+      <li>
+        <a class="b-link" @click="toggleBMenu" href="#projectscontainer"
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a class="b-link" @click="toggleBMenu" href="#contactcontainer"
+          >Contact</a
+        >
+      </li>
     </ul>
 
-    <a class="nav-link-home" href="">
+    <a class="nav-link-home" href="#homecontainer">
       <img src="./icons/home_icon.png" alt="home" />
     </a>
     <div class="nav-links">
-      <a class="nav-link" href="">About</a>
-      <a class="nav-link" href="">Projects</a>
-      <a class="nav-link" href="">Contact</a>
+      <a class="nav-link" href="#aboutcontainer">About</a>
+      <a class="nav-link" href="#projectscontainer">Projects</a>
+      <a class="nav-link" href="#contactcontainer">Contact</a>
     </div>
 
     <ul class="icon-links">
@@ -193,27 +205,3 @@ a:hover {
   }
 }
 </style>
-
-<!-- Scroll into view example: -->
-<!-- <template>
-  <div id="app">
-    <button @click="scrollToElement">scroll to last</button>
-    <p v-for="n of 100" :key="n" :ref="n === 100 ? 'last' : undefined">
-      {{ n }}
-    </p>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "App",
-  methods: {
-    scrollToElement() {
-      const [el] = this.$refs.last;
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    },
-  },
-};
-</script> -->

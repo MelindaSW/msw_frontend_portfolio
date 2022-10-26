@@ -17,7 +17,9 @@
         possible!
       </p>
     </div>
-    <img id="scrolldownicon" src="./icons/scrollarrowtodown_icon.png" alt="" />
+    <a href="#aboutcontainer"
+      ><img id="scrolldownicon" src="./icons/scrollarrowtodown_icon.png" alt=""
+    /></a>
   </div>
 </template>
 
@@ -77,6 +79,10 @@ a {
   position: sticky;
   margin: 3rem auto;
   padding: 9px;
+}
+
+#scrolldownicon:hover {
+  border: 2px solid #45588970;
 }
 
 @media (min-width: 561px) {

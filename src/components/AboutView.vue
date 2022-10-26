@@ -1,5 +1,5 @@
 <template lang="">
-  <div id="aboutcontainer">
+  <div id="aboutcontainer" ref="about">
     <h1>About</h1>
     <p>
       After graduating from a two year long vocational Java EE education at YRGO
@@ -51,7 +51,6 @@ p {
 }
 
 ul {
-  /* text-align: left; */
   list-style: none;
   padding: 1.2rem;
 }
@@ -61,12 +60,5 @@ li {
 }
 
 @media (min-width: 561px) {
-  /* #homecontainer {
-  padding-top: ;
- } */
-
-  img {
-    width: 166px;
-  }
 }
 </style>
