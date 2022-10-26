@@ -1,121 +1,57 @@
 <script lang="ts">
+import { projects } from "../assets/projects"
 export default {
   data: () => ({
-    projects: [
-      {
-        title: "Haiku generator",
-        repo: "https://github.com/MelindaSW/poetry-generator-api",
-        description:
-          "A haiku generator api. Can be run with maven: ./mvnw spring-boot:run. Go to http://localhost:8080/swagger-ui.html#/ and generate poetry via the endpoints",
-        url: "test",
-        tech: ["Java", "Spring Boot", "Maven", "Lombok", "Swagger", "REST"],
-        img: "pg1.png",
-      },
-      {
-        title: "Poetry Slack",
-        repo: "https://github.com/wasse/slack-poem",
-        description:
-          "This web applicaion was a school group project for the project and entreprenourship course at YRGO. It is using Slacks API and the applications own backend. Based on the content of the selected channel conversation it generates different kinds of poetry and the user can then choose to post it in the desired channel",
-        url: "",
-        tech: [
-          "JavaScript",
-          "React.js",
-          "Java EE",
-          "TomEE (Tomcat)",
-          "REST",
-          "Maven",
-          "Swagger",
-          "Postgresql",
-          "Mobx",
-          "Bulma",
-          "Sass",
-        ],
-        img: "ps2.png",
-      },
-      {
-        title: "Personal website",
-        repo: "https://github.com/MelindaSW/melindasw.se-sourcecode",
-        description: "My previous portfolio and personal website.",
-        url: "https://melindasw.netlify.app/",
-        tech: [
-          "Vue.js 2",
-          "Vue CLI",
-          "Node",
-          "JavaScript",
-          "vue-router",
-          "Vuetify",
-          "Sass",
-        ],
-        img: "melindaswse.jpg",
-      },
-      {
-        title: "Poetry Slack",
-        repo: "https://github.com/wasse/slack-poem",
-        description:
-          "This web applicaion was a school group project for the project and entreprenourship course at YRGO. It is using Slacks API and the applications own backend. Based on the content of the selected channel conversation it generates different kinds of poetry and the user can then choose to post it in the desired channel",
-        url: "",
-        tech: [
-          "JavaScript",
-          "React.js",
-          "Java EE",
-          "TomEE (Tomcat)",
-          "REST",
-          "Maven",
-          "Swagger",
-          "Postgresql",
-          "Mobx",
-          "Bulma",
-          "Sass",
-        ],
-        img: "ps2.png",
-      },
-      // {
-      //     title: "",
-      //     repo: "",
-      //     description: "",
-      //     url: "",
-      //     tech: [""],
-      //     img: ""
-      // },
-    ],
+    projects,
   }),
   setup() {
     const getImageUrl = (name: string) => {
-      return new URL(`../assets/${name}`, import.meta.url).href;
-    };
-    return { getImageUrl };
+      return new URL(`../assets/${name}`, import.meta.url).href
+    }
+    return { getImageUrl }
   },
   methods: {},
-};
+}
 </script>
 
 <template>
   <div id="projectscontainer">
     <h1>Projects</h1>
-    <div class="projectcard" v-for="(p, i) in projects" :key="i">
-      <img :src="getImageUrl(p.img)" :alt="p.title" />
-      <h3>{{ p.title }}</h3>
-      <p>{{ p.description }}</p>
-      <div id="techp">
-        <div class="tech" v-for="(t, i) in p.tech" :key="i">{{ t }}</div>
+    <div class="grid">
+      <div class="projectcard griditem" v-for="(p, i) in projects" :key="i">
+        <img :src="getImageUrl(p.img)" :alt="p.title" />
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.description }}</p>
+        <div id="techp">
+          <div class="tech" v-for="(t, i) in p.tech" :key="i">{{ t }}</div>
+        </div>
+        <p>
+          <a :href="p.repo">REPOSITORY</a> {{}}
+          <a v-if="p.url" :href="p.url">VIEW IT LIVE</a>
+        </p>
       </div>
-      <p>
-        <a :href="p.repo">REPOSITORY</a> {{}}
-        <a v-if="p.url" :href="p.url">VIEW</a>
-      </p>
     </div>
   </div>
 </template>
 
 <style scoped>
 #projectscontainer {
+  background-color: white;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 3rem;
   padding-top: 2rem;
   padding-bottom: 2.7rem;
+  margin: 4rem auto;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: xx-large;
 }
 
 h3 {
@@ -124,9 +60,20 @@ h3 {
   margin-top: 1rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+}
+
+.griditem {
+  margin: auto;
+}
+
 .projectcard {
   background-color: white;
   border-radius: 0.5rem;
+  border: 5px solid #dfdfdf;
   display: flex;
   flex-direction: column;
   width: 87%;
@@ -137,12 +84,14 @@ h3 {
 
 p {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 img {
   border-radius: 0.5rem;
   border: 1.5px solid #dfdfdf;
   width: 100%;
+  height: 50%;
 }
 
 #techp {
@@ -168,5 +117,12 @@ a {
   font-weight: bold;
   color: #455889;
   padding: 3px;
+}
+
+@media (min-width: 800px) {
+  #projectscontainer {
+    width: 80%;
+    font-size: larger;
+  }
 }
 </style>

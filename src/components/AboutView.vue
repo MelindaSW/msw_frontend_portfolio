@@ -4,8 +4,8 @@
     <p>
       After graduating from a two year long vocational Java EE education at YRGO
       in Gothenburg, I embarked on a journey as a software developer consultant.
-      The education included both backend and frontend development, as well as
-      two longer internship courses.
+      <br />The education included both backend and frontend development, as
+      well as two longer internship courses.
     </p>
     <h2>Frontend</h2>
     <p>JavaScript | TypeScript | Node.js | Vue.js | React.js</p>
@@ -26,12 +26,13 @@
 </template>
 
 <script lang="ts">
-export default {};
+export default {}
 </script>
 
 <style scoped>
 #aboutcontainer {
   background-color: white;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +60,12 @@ li {
   margin-top: 16px;
 }
 
-@media (min-width: 561px) {
+@media (min-width: 1600px) {
+  #aboutcontainer {
+    width: 60%;
+    padding: 4rem;
+    margin: auto;
+    font-size: 1rem;
+  }
 }
 </style>

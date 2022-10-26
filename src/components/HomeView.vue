@@ -11,20 +11,25 @@
         consultant with a passion for web development.
       </p>
       <p>
-        Here you can find a <a href="">selection of projects</a> and
-        <a href="">more information</a>. If you have any questions or want to
-        reach out, <a href="">email me</a> and I will answer as soon as
+        Here you can find a
+        <a href="#projectscontainer">selection of projects</a> and
+        <a href="#aboutcontainer">more information</a>. If you have any
+        questions or want to reach out,
+        <a href="#contactcontainer">email me</a> and I will answer as soon as
         possible!
       </p>
     </div>
     <a href="#aboutcontainer"
-      ><img id="scrolldownicon" src="./icons/scrollarrowtodown_icon.png" alt=""
+      ><img
+        id="scrolldownicon"
+        src="./icons/scrollarrowtodown_icon.png"
+        alt="scroll down"
     /></a>
   </div>
 </template>
 
 <script lang="ts">
-export default {};
+export default {}
 </script>
 
 <style scoped>
@@ -103,8 +108,8 @@ a {
   }
 
   #scrolldownicon {
-    position: absolute;
-    bottom: 10px;
+    /* position: absolute;
+    bottom: 10px; */
     width: 50px;
   }
 }

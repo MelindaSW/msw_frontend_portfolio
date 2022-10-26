@@ -5,10 +5,10 @@ export default {
   }),
   methods: {
     toggleBMenu() {
-      this.displayBMenu = !this.displayBMenu;
+      this.displayBMenu = !this.displayBMenu
     },
   },
-};
+}
 </script>
 
 <template>

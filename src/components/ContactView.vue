@@ -1,7 +1,7 @@
 <script lang="ts">
 // using https://getform.io/
 
-import axios from "axios";
+import axios from "axios"
 
 export default {
   data() {
@@ -11,16 +11,16 @@ export default {
       email: "",
       message: "",
       isSuccess: false,
-    };
+    }
   },
   methods: {
     onSubmit() {
-      if (this.loading) return;
-      this.loading = true;
-      const formData = new FormData();
-      formData.append("message", this.message);
-      formData.append("name", this.name);
-      formData.append("email", this.email);
+      if (this.loading) return
+      this.loading = true
+      const formData = new FormData()
+      formData.append("message", this.message)
+      formData.append("name", this.name)
+      formData.append("email", this.email)
 
       axios
         .post(
@@ -34,19 +34,19 @@ export default {
         )
         .then(
           (response: { data: { success: boolean } }) => {
-            this.isSuccess = response.data.success;
-            this.name = "";
-            this.email = "";
-            this.message = "";
-            this.loading = false;
+            this.isSuccess = response.data.success
+            this.name = ""
+            this.email = ""
+            this.message = ""
+            this.loading = false
           },
           (response: any) => {
-            console.log(response);
+            console.log(response)
           }
-        );
+        )
     },
   },
-};
+}
 </script>
 
 <template>
@@ -161,7 +161,6 @@ input {
 button {
   background-color: #455889;
   color: white;
-  /* font-weight: bold; */
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
