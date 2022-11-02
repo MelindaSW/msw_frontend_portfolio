@@ -1,5 +1,5 @@
 <template lang="">
-  <div id="aboutcontainer" ref="about">
+  <div id="about">
     <h1>About</h1>
     <p>
       After graduating from a two year long vocational Java EE education at YRGO
@@ -30,7 +30,7 @@ export default {}
 </script>
 
 <style scoped>
-#aboutcontainer {
+#about {
   background-color: white;
   border-radius: 10px;
   display: flex;
@@ -61,7 +61,7 @@ li {
 }
 
 @media (min-width: 1600px) {
-  #aboutcontainer {
+  #about {
     width: 60%;
     padding: 4rem;
     margin: auto;

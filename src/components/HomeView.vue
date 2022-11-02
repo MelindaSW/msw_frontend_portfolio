@@ -1,5 +1,5 @@
 <template lang="">
-  <div id="homecontainer">
+  <div id="home">
     <div id="head">
       <img id="profilepic" src="../assets/profilepic-circle.png" />
     </div>
@@ -12,19 +12,19 @@
       </p>
       <p>
         Here you can find a
-        <a href="#projectscontainer">selection of projects</a> and
-        <a href="#aboutcontainer">more information</a>. If you have any
+        <a href="#projects">selection of projects</a> and
+        <a href="#about">more information</a>. If you have any
         questions or want to reach out,
-        <a href="#contactcontainer">email me</a> and I will answer as soon as
+        <a href="#contact">email me</a> and I will answer as soon as
         possible!
       </p>
     </div>
-    <a href="#aboutcontainer"
+    <a href="#about"
       ><img
         id="scrolldownicon"
         src="./icons/scrollarrowtodown_icon.png"
         alt="scroll down"
-    /></a>
+    ></a>
   </div>
 </template>
 
@@ -33,7 +33,7 @@ export default {}
 </script>
 
 <style scoped>
-#homecontainer {
+#home {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -91,7 +91,7 @@ a {
 }
 
 @media (min-width: 561px) {
-  #homecontainer {
+  #home {
     width: 75%;
     margin: auto;
   }
@@ -102,7 +102,7 @@ a {
 }
 
 @media (min-width: 800px) {
-  #homecontainer {
+  #home {
     height: 100vh;
     width: 60%;
   }
@@ -115,7 +115,7 @@ a {
 }
 
 @media (min-width: 1600px) {
-  #homecontainer {
+  #home {
     flex-direction: row;
     width: 70%;
   }

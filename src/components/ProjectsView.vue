@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <div id="projectscontainer">
+  <div id="projects">
     <h1>Projects</h1>
     <div class="grid">
       <div class="projectcard griditem" v-for="(p, i) in projects" :key="i">
@@ -35,7 +35,7 @@ export default {
 </template>
 
 <style scoped>
-#projectscontainer {
+#projects {
   background-color: white;
   border-radius: 10px;
   display: flex;
@@ -120,7 +120,7 @@ a {
 }
 
 @media (min-width: 800px) {
-  #projectscontainer {
+  #projects {
     width: 80%;
     font-size: larger;
   }

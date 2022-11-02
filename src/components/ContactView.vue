@@ -50,7 +50,7 @@ export default {
 </script>
 
 <template>
-  <div id="contactcontainer">
+  <div id="contact">
     <h1>Contact</h1>
     <p class="info">
       Thank you for reading this far! <br />If you want to get in touch, you can
@@ -101,7 +101,7 @@ export default {
 </template>
 
 <style scoped>
-#contactcontainer {
+#contact {
   background-color: white;
   display: flex;
   justify-content: center;

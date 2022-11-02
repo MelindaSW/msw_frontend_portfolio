@@ -21,30 +21,30 @@ export default {
     />
     <ul v-if="displayBMenu" class="burger-links">
       <li>
-        <a class="b-link" @click="toggleBMenu" href="#homecontainer">Home</a>
+        <a class="b-link" @click="toggleBMenu" href="#home">Home</a>
       </li>
       <li>
-        <a class="b-link" @click="toggleBMenu" href="#aboutcontainer">About</a>
+        <a class="b-link" @click="toggleBMenu" href="#about">About</a>
       </li>
       <li>
-        <a class="b-link" @click="toggleBMenu" href="#projectscontainer"
+        <a class="b-link" @click="toggleBMenu" href="#projects"
           >Projects</a
         >
       </li>
       <li>
-        <a class="b-link" @click="toggleBMenu" href="#contactcontainer"
+        <a class="b-link" @click="toggleBMenu" href="#contact"
           >Contact</a
         >
       </li>
     </ul>
 
-    <a class="nav-link-home" href="#homecontainer">
+    <a class="nav-link-home" href="#home">
       <img src="./icons/home_icon.png" alt="home" />
     </a>
     <div class="nav-links">
-      <a class="nav-link" href="#aboutcontainer">About</a>
-      <a class="nav-link" href="#projectscontainer">Projects</a>
-      <a class="nav-link" href="#contactcontainer">Contact</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </div>
 
     <ul class="icon-links">
