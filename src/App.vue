@@ -24,6 +24,7 @@ main {
   flex-direction: column;
   position: absolute;
   top: 55px;
+  width: 100%;
 }
 
 @media (min-width: 561px) {

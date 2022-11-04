@@ -108,13 +108,11 @@ a {
   }
 
   #scrolldownicon {
-    /* position: absolute;
-    bottom: 10px; */
     width: 50px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   #home {
     flex-direction: row;
     width: 70%;
@@ -133,19 +131,16 @@ a {
 
   p {
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   #profilepic {
-    width: 360px;
+    width: 320px;
     padding-bottom: 5rem;
   }
 
   #scrolldownicon {
-    /* width: 50px; */
     position: relative;
-    /* align-self: center; */
-    /* justify-self: center; */
   }
 }
 </style>

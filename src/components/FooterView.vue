@@ -17,12 +17,13 @@ export default {}
 
 <style scoped>
 footer {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 a {

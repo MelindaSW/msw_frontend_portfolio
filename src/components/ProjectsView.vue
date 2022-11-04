@@ -25,8 +25,8 @@ export default {
         <div id="techp">
           <div class="tech" v-for="(t, i) in p.tech" :key="i">{{ t }}</div>
         </div>
-        <p>
-          <a :href="p.repo">REPOSITORY</a> {{}}
+        <p class="links">
+          <a :href="p.repo">REPOSITORY</a> 
           <a v-if="p.url" :href="p.url" target="_blank">VIEW IT LIVE</a>
         </p>
       </div>
@@ -51,7 +51,6 @@ export default {
 
 h1 {
   margin-bottom: 2rem;
-  font-size: xx-large;
 }
 
 h3 {
@@ -63,7 +62,7 @@ h3 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 5px;
 }
 
 .griditem {
@@ -72,11 +71,12 @@ h3 {
 
 .projectcard {
   background-color: white;
-  /* border-radius: 0.5rem; */
-  border-top: 5px solid #dfdfdf;
-  border-left: 5px solid #dfdfdf;
+  border-top: 3px solid #455889;
+  border-left: 3px solid #455889;
+  border-radius: 8px 0px;
   display: flex;
   flex-direction: column;
+  font-size: 1rem;;
   width: 87%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -90,8 +90,10 @@ p {
 
 img {
   border-radius: 0.5rem;
-  border: 1.5px solid #dfdfdf;
+  border: 2px solid #dfdfdf;
   width: 100%;
+  aspect-ratio: 18 / 9;
+  object-fit: cover;
 }
 
 #techp {
@@ -110,6 +112,13 @@ img {
   padding-right: 3px;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+
 a {
   background-color: #dfdfdf;
   border-radius: 3px;
@@ -117,6 +126,10 @@ a {
   font-weight: bold;
   color: #455889;
   padding: 3px;
+}
+
+a:hover {
+  border: 1px solid #455889;
 }
 
 @media (min-width: 800px) {

@@ -13,6 +13,11 @@ export default {
       isSuccess: false,
     }
   },
+  computed:   {
+    submitDisabled () {
+      return (this.name != '' && this.email != '' && this.message != '')
+    }
+  },
   methods: {
     onSubmit() {
       if (this.loading) return
@@ -71,7 +76,7 @@ export default {
             v-model="name"
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Your Name *"
           />
         </div>
         <div class="form-group">
@@ -79,7 +84,7 @@ export default {
             v-model="email"
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Your Email *"
           />
         </div>
         <div class="form-group">
@@ -89,10 +94,10 @@ export default {
             name="message"
             id="message"
             rows="6"
-            placeholder="Message"
+            placeholder="Message *"
           />
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" :disabled="!submitDisabled">Send</button>
 
         <p v-if="isSuccess">Message sent.</p>
       </form>
@@ -103,12 +108,15 @@ export default {
 <style scoped>
 #contact {
   background-color: white;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: 2.3rem;
   padding-bottom: 2.7rem;
+  margin:auto;
+  margin-bottom: 5rem;
 }
 
 .info {
@@ -137,6 +145,7 @@ form {
 
 .form-group {
   padding-top: 1rem;
+  width: 50%;
 }
 
 input {
@@ -146,6 +155,7 @@ input {
   margin: auto;
   color: #455889;
   padding: 10px;
+  width: 100%;
 }
 
 #message {
@@ -157,6 +167,8 @@ input {
   border: none;
   padding: 15px;
   resize: none;
+  width: 100%;
+
 }
 
 button {
@@ -167,6 +179,12 @@ button {
   border-radius: 5px;
   margin-top: 1rem;
   padding: 7px 15px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 input:focus,
@@ -180,5 +198,11 @@ a {
   text-decoration: none;
   color: #6380ca92;
   font-weight: bold;
+}
+
+@media (min-width: 1500px) { 
+  #contact{
+    width: 60%;
+  }
 }
 </style>

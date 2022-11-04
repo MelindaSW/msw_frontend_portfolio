@@ -173,6 +173,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    border-bottom: 1.5px solid black;
   }
 
   .nav-link-home {

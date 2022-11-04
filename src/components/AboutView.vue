@@ -42,6 +42,10 @@ export default {}
   padding-bottom: 2.7rem;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 h2 {
   text-transform: uppercase;
   margin-top: 1.2rem;
@@ -60,12 +64,11 @@ li {
   margin-top: 16px;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   #about {
     width: 60%;
     padding: 4rem;
     margin: auto;
-    font-size: 1rem;
   }
 }
 </style>
