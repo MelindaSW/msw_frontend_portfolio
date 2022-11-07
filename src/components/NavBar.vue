@@ -27,14 +27,10 @@ export default {
         <a class="b-link" @click="toggleBMenu" href="#about">About</a>
       </li>
       <li>
-        <a class="b-link" @click="toggleBMenu" href="#projects"
-          >Projects</a
-        >
+        <a class="b-link" @click="toggleBMenu" href="#projects">Projects</a>
       </li>
       <li>
-        <a class="b-link" @click="toggleBMenu" href="#contact"
-          >Contact</a
-        >
+        <a class="b-link" @click="toggleBMenu" href="#contact">Contact</a>
       </li>
     </ul>
 
@@ -74,7 +70,7 @@ export default {
 <style scoped>
 nav {
   width: 82px;
-  height: 100vh;
+  min-height: 100%;
   background: #ffffff;
   color: black;
   font-size: 16px;

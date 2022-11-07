@@ -13,10 +13,9 @@
       <p>
         Here you can find a
         <a href="#projects">selection of projects</a> and
-        <a href="#about">more information</a>. If you have any
-        questions or want to reach out,
-        <a href="#contact">email me</a> and I will answer as soon as
-        possible!
+        <a href="#about">more information</a>. If you have any questions or want
+        to reach out, <a href="#contact">email me</a> and I will answer as soon
+        as possible!
       </p>
     </div>
     <a href="#about"
@@ -24,7 +23,7 @@
         id="scrolldownicon"
         src="./icons/scrollarrowtodown_icon.png"
         alt="scroll down"
-    ></a>
+    /></a>
   </div>
 </template>
 
