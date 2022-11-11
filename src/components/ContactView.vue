@@ -13,10 +13,10 @@ export default {
       isSuccess: false,
     }
   },
-  computed:   {
-    submitDisabled () {
-      return (this.name != '' && this.email != '' && this.message != '')
-    }
+  computed: {
+    submitDisabled() {
+      return this.name != "" && this.email != "" && this.message != ""
+    },
   },
   methods: {
     onSubmit() {
@@ -115,7 +115,7 @@ export default {
   flex-direction: column;
   padding-top: 2.3rem;
   padding-bottom: 2.7rem;
-  margin:auto;
+  margin: auto;
   margin-bottom: 5rem;
 }
 
@@ -168,7 +168,6 @@ input {
   padding: 15px;
   resize: none;
   width: 100%;
-
 }
 
 button {
@@ -200,8 +199,8 @@ a {
   font-weight: bold;
 }
 
-@media (min-width: 1500px) { 
-  #contact{
+@media (min-width: 1500px) {
+  #contact {
     width: 60%;
   }
 }

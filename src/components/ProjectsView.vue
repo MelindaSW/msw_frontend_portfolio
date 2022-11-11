@@ -26,7 +26,7 @@ export default {
           <div class="tech" v-for="(t, i) in p.tech" :key="i">{{ t }}</div>
         </div>
         <p class="links">
-          <a :href="p.repo">REPOSITORY</a> 
+          <a :href="p.repo">REPOSITORY</a>
           <a v-if="p.url" :href="p.url" target="_blank">VIEW IT LIVE</a>
         </p>
       </div>
@@ -76,7 +76,7 @@ h3 {
   border-radius: 8px 0px;
   display: flex;
   flex-direction: column;
-  font-size: 1rem;;
+  font-size: 1rem;
   width: 87%;
   margin-top: 1rem;
   margin-bottom: 1rem;

@@ -7,16 +7,15 @@
       <h1>Melinda S-Wagner</h1>
       <h2>Software developer</h2>
       <p>
-        Hi and welcome to my portfolio! <br />I am a junior software developer
-        consultant with a passion for web development.
+        Hi and welcome to my portfolio! <br />I am working as a junior software
+        developer consultant has an ever growing passion for web development.
       </p>
       <p>
         Here you can find a
         <a href="#projects">selection of projects</a> and
-        <a href="#about">more information</a>. If you have any
-        questions or want to reach out,
-        <a href="#contact">email me</a> and I will answer as soon as
-        possible!
+        <a href="#about">more information</a>. If you have any questions or want
+        to reach out, <a href="#contact">contact me</a> and I will see to
+        answering as soon as possible!
       </p>
     </div>
     <a href="#about"
@@ -24,7 +23,7 @@
         id="scrolldownicon"
         src="./icons/scrollarrowtodown_icon.png"
         alt="scroll down"
-    ></a>
+    /></a>
   </div>
 </template>
 

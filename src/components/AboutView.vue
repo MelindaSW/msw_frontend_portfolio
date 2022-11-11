@@ -22,6 +22,10 @@
       </li>
       <li>Women's tailoring - KY Tailoring - 2007-2009</li>
     </ul>
+    <h2>Certifications</h2>
+    <p>
+      <img class="badge" src="..\assets\izo-811-badge.jpg" alt="cert badge" />
+    </p>
   </div>
 </template>
 
@@ -62,6 +66,10 @@ ul {
 
 li {
   margin-top: 16px;
+}
+
+.badge {
+  width: 150px;
 }
 
 @media (min-width: 1500px) {
