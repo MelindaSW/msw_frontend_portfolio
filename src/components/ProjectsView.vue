@@ -61,7 +61,7 @@ h3 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
   grid-gap: 5px;
 }
 
@@ -136,6 +136,9 @@ a:hover {
   #projects {
     width: 80%;
     font-size: larger;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   }
 }
 </style>
