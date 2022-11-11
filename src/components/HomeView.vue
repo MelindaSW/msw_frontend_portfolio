@@ -8,7 +8,8 @@
       <h2>Software developer</h2>
       <p>
         Hi and welcome to my portfolio! <br />I am working as a junior software
-        developer consultant has an ever growing passion for web development.
+        developer consultant and have a passion for web development and problem
+        solving.
       </p>
       <p>
         Here you can find a
