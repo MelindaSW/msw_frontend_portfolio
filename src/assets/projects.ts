@@ -46,7 +46,7 @@ export const projects = [
     repo: "https://github.com/MelindaSW/poetry-generator-api",
     description:
       "A haiku generator api. Can be run with maven: ./mvnw spring-boot:run. Go to http://localhost:8080/swagger-ui.html#/ and generate poetry via the endpoints",
-    url: "test",
+    url: "",
     tech: ["Java", "Spring Boot", "Maven", "Lombok", "Swagger", "REST"],
     img: "pg1.png",
   },
