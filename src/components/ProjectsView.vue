@@ -37,7 +37,7 @@ export default {
 <style scoped>
 #projects {
   background-color: white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,17 +70,18 @@ h3 {
 }
 
 .projectcard {
-  background-color: white;
-  border-top: 3px solid #455889;
-  border-left: 3px solid #455889;
-  border-radius: 8px 0px;
+  background-color: #180e41;
+  color: white;
+  /* border-top: 3px solid #455889;
+  border-left: 3px solid #455889; */
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  width: 87%;
+  width: 80%;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 p {
@@ -89,7 +90,7 @@ p {
 }
 
 img {
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   border: 2px solid #dfdfdf;
   width: 100%;
   aspect-ratio: 18 / 9;
@@ -105,6 +106,7 @@ img {
 
 .tech {
   background-color: #dfdfdf;
+  color: #07090e;
   border-radius: 3px;
   margin-left: 5px;
   margin-top: 5px;
@@ -129,7 +131,9 @@ a {
 }
 
 a:hover {
-  border: 1px solid #455889;
+  /* border: 1px solid #455889; */
+  background-color: #a8bcf044;
+  color: white;
 }
 
 @media (min-width: 800px) {
