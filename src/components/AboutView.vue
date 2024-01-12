@@ -2,15 +2,16 @@
   <div id="about">
     <h1>About</h1>
     <p>
-      After graduating from a two year long vocational Java EE education at YRGO
-      in Gothenburg, I embarked on a journey as a software developer consultant.
-      <br />The education included both backend and frontend development, as
-      well as two longer internship courses.
+      After discovering my passion for coding and IT, I decided to put my former
+      career as a tailor on hiatus. Around two years later, in 2020, I graduated
+      from a vocational education which gave me with a broad knowledge of both
+      backend and frontend programming. Since then I have worked as a software
+      developer consultant.
     </p>
-    <h2>Frontend</h2>
-    <p>JavaScript | TypeScript | Node.js | Vue.js | React.js</p>
-    <h2>Backend</h2>
-    <p>Java | Java EE | Spring Boot | SQL</p>
+    <h2>Languages</h2>
+    <p>JavaScript | TypeScript | Java | SQL</p>
+    <h2>Frameworks</h2>
+    <p>React.js | Vue.js | Node.js | SpringBoot</p>
     <h2>DevOps</h2>
     <p>GitHub | Docker | Azure DevOps | Maven</p>
     <h2>Education</h2>
@@ -36,7 +37,7 @@ export default {}
 <style scoped>
 #about {
   background-color: white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +45,7 @@ export default {}
   text-align: center;
   padding-top: 2.3rem;
   padding-bottom: 2.7rem;
+  width: 80%;
 }
 
 h1 {
@@ -72,11 +74,12 @@ li {
   width: 150px;
 }
 
-@media (min-width: 1500px) {
+@media (max-width: 1500px) {
   #about {
-    width: 60%;
+    width: 100%;
+    /* width: 60%;
     padding: 4rem;
-    margin: auto;
+    margin: auto;*/
   }
 }
 </style>

@@ -26,6 +26,7 @@ export default {
       formData.append("message", this.message)
       formData.append("name", this.name)
       formData.append("email", this.email)
+      // const key = import.meta.env.VITE_FORM_KEY
 
       axios
         .post(
@@ -57,14 +58,7 @@ export default {
 <template>
   <div id="contact">
     <h1>Contact</h1>
-    <p class="info">
-      Thank you for reading this far! <br />If you want to get in touch, you can
-      reach me on
-      <a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/"
-        >Linkedin</a
-      >, <a href="mailto:sandstrommelinda@gmail.com">email me</a>, or send a
-      quick message here.
-    </p>
+
     <div class="form">
       <form
         enctype="multipart/form-data"
@@ -108,7 +102,7 @@ export default {
 <style scoped>
 #contact {
   background-color: white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,6 +111,7 @@ export default {
   padding-bottom: 2.7rem;
   margin: auto;
   margin-bottom: 5rem;
+  width: 80%;
 }
 
 .info {
@@ -135,7 +130,7 @@ form {
 
 .form {
   background-color: #dfdfdf;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding-top: 1rem;
   padding-bottom: 2rem;
   width: 80%;
@@ -199,9 +194,9 @@ a {
   font-weight: bold;
 }
 
-@media (min-width: 1500px) {
+@media (max-width: 1500px) {
   #contact {
-    width: 60%;
+    width: 100%;
   }
 }
 </style>

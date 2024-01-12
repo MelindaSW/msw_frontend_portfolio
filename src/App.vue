@@ -8,29 +8,42 @@ import FooterView from "./components/FooterView.vue"
 </script>
 
 <template>
-  <NavBar />
-  <main>
-    <HomeView />
-    <AboutView />
-    <ProjectsView />
-    <ContactView />
-    <FooterView />
-  </main>
+  <div id="main">
+    <NavBar />
+    <main>
+      <HomeView />
+      <AboutView />
+      <ProjectsView />
+      <ContactView />
+      <!-- <FooterView /> -->
+    </main>
+  </div>
 </template>
 
 <style scoped>
+#main {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
 main {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 55px;
-  width: 100%;
+  margin-left: 110px;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  /* top: 55px;
+  width: 100%; */
 }
 
-@media (min-width: 561px) {
+@media (max-width: 561px) {
   main {
-    margin-left: 60px;
-    top: 0px;
+    /* margin-left: 60px;
+    top: 0px; */
+    margin-left: 0px;
   }
 }
 </style>

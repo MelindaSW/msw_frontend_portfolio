@@ -7,15 +7,20 @@
       <h1>Melinda S-Wagner</h1>
       <h2>Software developer</h2>
       <p>
-        Hi and welcome to my portfolio! <br />I am working as a junior software
-        developer consultant has an ever growing passion for web development.
+        Hi and welcome to my page! <br />I am a fullstack web developer,
+        currently working as a software engineer consultant.
       </p>
       <p>
-        Here you can find a
-        <a href="#projects">selection of projects</a> and
-        <a href="#about">more information</a>. If you have any questions or want
-        to reach out, <a href="#contact">contact me</a> and I will see to
-        answering as soon as possible!
+        Here you can find examples of some of my
+        <a href="#projects">projects</a> and get an overview
+        <a href="#about">of my skills</a>.
+      </p>
+      <p>
+        If you want to get in touch, you can reach me via
+        <a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/"
+          >Linkedin</a
+        >, <a href="mailto:sandstrommelinda@gmail.com">email me</a>, or send a
+        quick message <a href="#contact"> here</a>.
       </p>
     </div>
     <a href="#about"
@@ -38,6 +43,7 @@ export default {}
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 2.7rem;
+  color: white;
 }
 
 #head {
@@ -71,8 +77,12 @@ p {
 
 a {
   text-decoration: none;
-  color: #6380ca92;
+  color: white;
   font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #scrolldownicon {

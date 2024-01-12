@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
 nav {
-  width: 82px;
+  width: 110px;
   min-height: 100%;
   background: #ffffff;
   color: black;
@@ -80,6 +80,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 50;
+  border-right: 1.8px solid black;
 }
 
 .burger_menu,
@@ -103,11 +104,13 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-weight: bold;
+  align-items: center;
 }
 
 a.nav-link {
   color: black;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   text-transform: uppercase;
   margin-bottom: 55px;
   margin-top: 10px;
@@ -143,13 +146,12 @@ a:hover {
   }
 
   .burger-links {
-    box-shadow: 0px 0px 5px #6380ca92;
-    border-radius: 50%;
+    border: 2px solid black;
     display: block;
     position: fixed;
     z-index: 100;
-    left: 13px;
-    top: 70px;
+    left: 25px;
+    top: 46px;
     background-color: #ffffff;
     padding: 16px;
     text-align: center;
@@ -163,13 +165,19 @@ a:hover {
   }
 
   nav {
+    /* position: absolute;
+    top: 0; */
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    left: 0;
     flex-direction: row;
     height: 55px;
     width: 100%;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.8px solid black;
   }
 
   .nav-link-home {
