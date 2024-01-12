@@ -58,7 +58,21 @@ export default {
 <template>
   <div id="contact">
     <h1>Contact</h1>
-
+    <div>
+      <a href="https://github.com/MelindaSW" target="_blank"
+        ><img src="./icons/github_icon.png" alt="gihub"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/"
+        target="_blank"
+        ><img src="./icons/linkedin_icon.png" alt="linkedin"
+      /></a>
+      <a
+        href="https://www.instagram.com/melindas_crosshatching/"
+        target="_blank"
+        ><img src="./icons/instagram_icon.png" alt="instagram"
+      /></a>
+    </div>
     <div class="form">
       <form
         enctype="multipart/form-data"
@@ -129,11 +143,11 @@ form {
 }
 
 .form {
-  background-color: #dfdfdf;
-  /* border-radius: 10px; */
+  background-color: #0e062e;
+  border-radius: 4px;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  width: 80%;
+  width: 60%;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -194,9 +208,28 @@ a {
   font-weight: bold;
 }
 
+img {
+  height: 40px;
+  margin: 15px;
+  transition: transform 0.5s;
+}
+
+img:hover {
+  transform: scale(1.2, 1.2);
+}
+
 @media (max-width: 1500px) {
   #contact {
     width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+    width: 95%;
+  }
+  .form-group {
+    width: 85%;
   }
 }
 </style>

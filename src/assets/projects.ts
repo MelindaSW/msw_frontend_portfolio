@@ -3,7 +3,7 @@ export const projects = [
     title: "Movie search",
     repo: "https://github.com/MelindaSW/melindas-movies",
     description: "Search for movies in the OmdbApi.",
-    url: "https://melindasportfolio.netlify.app/",
+    url: "https://msw-movies.netlify.app/",
     tech: ["React.js", "react-redux", "Typescript", "Vite"],
     img: "movies.png",
   },
@@ -11,7 +11,7 @@ export const projects = [
     title: "Dnd AI",
     repo: "https://github.com/MelindaSW/my-dnd-ai-app",
     description: "A DnD character backstory creator. Using the OpenAI api.",
-    url: "https://melindasportfolio.netlify.app/",
+    url: "https://msw-dndai.netlify.app/",
     tech: [
       "React.js",
       "OpenAI",

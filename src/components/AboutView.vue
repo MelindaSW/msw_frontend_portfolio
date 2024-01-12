@@ -46,6 +46,7 @@ export default {}
   padding-top: 2.3rem;
   padding-bottom: 2.7rem;
   width: 80%;
+  height: 100lvh;
 }
 
 h1 {
@@ -54,7 +55,6 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  margin-top: 1.2rem;
 }
 
 p {
@@ -63,7 +63,7 @@ p {
 
 ul {
   list-style: none;
-  padding: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 
 li {
@@ -74,12 +74,15 @@ li {
   width: 150px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 800px) {
   #about {
     width: 100%;
-    /* width: 60%;
-    padding: 4rem;
-    margin: auto;*/
+  }
+}
+
+@media (max-width: 1000px) {
+  #about {
+    height: 100%;
   }
 }
 </style>

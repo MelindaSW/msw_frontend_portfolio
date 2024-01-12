@@ -23,12 +23,12 @@
         quick message <a href="#contact"> here</a>.
       </p>
     </div>
-    <a href="#about"
+    <!-- <a href="#about"
       ><img
         id="scrolldownicon"
         src="./icons/scrollarrowtodown_icon.png"
         alt="scroll down"
-    /></a>
+    /></a> -->
   </div>
 </template>
 
@@ -85,20 +85,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#scrolldownicon {
-  background-color: white;
-  border-radius: 50%;
-  width: 35px;
-  cursor: pointer;
-  position: sticky;
-  margin: 3rem auto;
-  padding: 9px;
-}
-
-#scrolldownicon:hover {
-  border: 2px solid #45588970;
-}
-
 @media (min-width: 561px) {
   #home {
     width: 75%;
@@ -114,10 +100,6 @@ a:hover {
   #home {
     height: 100vh;
     width: 60%;
-  }
-
-  #scrolldownicon {
-    width: 50px;
   }
 }
 
@@ -146,10 +128,6 @@ a:hover {
   #profilepic {
     width: 320px;
     padding-bottom: 5rem;
-  }
-
-  #scrolldownicon {
-    position: relative;
   }
 }
 </style>
