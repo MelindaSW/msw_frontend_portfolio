@@ -1,38 +1,47 @@
 <template>
-  <a href="#about">
+  <a :href="destinations[toDestination]">
     <img
       @click="setNextDestination"
       class="scrollicon"
       src="./icons/upscrollarrow_icon.png"
       alt="scroll up"
+      v-if="displayUp"
+    />
+    <img
+      @click="setNextDestination"
+      class="scrollicon"
+      src="./icons/scrollarrowtodown_icon.png"
+      alt="scroll down"
+      v-if="!displayUp"
     />
   </a>
-  <img
-    @click="setNextDestination"
-    class="scrollicon"
-    src="./icons/scrollarrowtodown_icon.png"
-    alt="scroll down"
-  />
 </template>
 
 <script lang="ts">
 export default {
   data: () => ({
     destinations: ["#home", "#about", "#projects", "#contact"],
-    currentDestination: 1,
+    toDestination: 1,
     displayUp: false,
   }),
+  created() {
+    window.addEventListener("scroll", this.handleScrollEvent)
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.handleScrollEvent)
+  },
   methods: {
     setNextDestination() {
-      this.currentDestination =
-        this.currentDestination === 3
+      this.toDestination =
+        this.toDestination === 3
           ? 0
-          : (this.currentDestination = this.currentDestination + 1)
+          : (this.toDestination = this.toDestination + 1)
+
+      this.displayUp = this.toDestination === 3
     },
-    scrollIntoView() {
-      // window.scrollTo("#about")
-    },
+    handleScrollEvent() {},
   },
+  computed: {},
 }
 </script>
 
