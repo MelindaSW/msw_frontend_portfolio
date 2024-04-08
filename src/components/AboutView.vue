@@ -37,7 +37,6 @@ export default {}
 <style scoped>
 #about {
   background-color: white;
-  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +45,6 @@ export default {}
   padding-top: 2.3rem;
   padding-bottom: 2.7rem;
   width: 80%;
-  height: 100lvh;
 }
 
 h1 {

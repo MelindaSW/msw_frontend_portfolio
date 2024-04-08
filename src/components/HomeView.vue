@@ -4,11 +4,11 @@
       <img id="profilepic" src="../assets/profilepic-circle.png" />
     </div>
     <div id="presentation">
-      <h1>Melinda S-Wagner</h1>
+      <h1>Melinda Sandström-Wagner</h1>
       <h2>Software developer</h2>
       <p>
-        Hi and welcome to my page! <br />I am a fullstack web developer,
-        currently working as a software engineer consultant.
+        Hi and welcome! <br />I am a fullstack web developer, specialized in
+        React/Typescript, Node and Java. This is my portfolio.
       </p>
       <p>
         Here you can find examples of some of my
@@ -19,16 +19,10 @@
         If you want to get in touch, you can reach me via
         <a href="https://www.linkedin.com/in/melinda-sandstr%C3%B6m-wagner/"
           >Linkedin</a
-        >, <a href="mailto:sandstrommelinda@gmail.com">email me</a>, or send a
-        quick message <a href="#contact"> here</a>.
+        >
+        or <a href="mailto:sandstrommelinda@gmail.com">email</a>.
       </p>
     </div>
-    <!-- <a href="#about"
-      ><img
-        id="scrolldownicon"
-        src="./icons/scrollarrowtodown_icon.png"
-        alt="scroll down"
-    /></a> -->
   </div>
 </template>
 
@@ -61,6 +55,10 @@ export default {}
 #profilepic {
   width: 50%;
   margin-top: 2rem;
+}
+
+h1 {
+  text-align: center;
 }
 
 h2 {

@@ -9,7 +9,7 @@ import ScrollIcon from "./components/ScrollIcon.vue"
 
 <template>
   <div id="main">
-    <ScrollIcon /> TODO: Uncomment after fixing scroll to actions
+    <ScrollIcon />
     <NavBar />
     <main>
       <HomeView />

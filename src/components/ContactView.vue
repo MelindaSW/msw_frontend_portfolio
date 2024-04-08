@@ -1,57 +1,10 @@
 <script lang="ts">
-// using https://getform.io/
-
-import axios from "axios"
-
 export default {
   data() {
-    return {
-      loading: false,
-      name: "",
-      email: "",
-      message: "",
-      isSuccess: false,
-    }
+    return {}
   },
-  computed: {
-    submitDisabled() {
-      return this.name != "" && this.email != "" && this.message != ""
-    },
-  },
-  methods: {
-    onSubmit() {
-      if (this.loading) return
-      this.loading = true
-      const formData = new FormData()
-      formData.append("message", this.message)
-      formData.append("name", this.name)
-      formData.append("email", this.email)
-      // const key = import.meta.env.VITE_FORM_KEY
-
-      axios
-        .post(
-          "https://getform.io/f/8e9e79ac-a576-4591-a0ba-08352a5004ef",
-          formData,
-          {
-            headers: {
-              Accept: "application/json",
-            },
-          }
-        )
-        .then(
-          (response: { data: { success: boolean } }) => {
-            this.isSuccess = response.data.success
-            this.name = ""
-            this.email = ""
-            this.message = ""
-            this.loading = false
-          },
-          (response: any) => {
-            console.log(response)
-          }
-        )
-    },
-  },
+  computed: {},
+  methods: {},
 }
 </script>
 
@@ -59,6 +12,9 @@ export default {
   <div id="contact">
     <h1>Contact</h1>
     <div>
+      <a href="mailto:sandstrommelinda@gmail.com"
+        ><img src="./icons/email_icon.png" alt="email"
+      /></a>
       <a href="https://github.com/MelindaSW" target="_blank"
         ><img src="./icons/github_icon.png" alt="gihub"
       /></a>
@@ -73,50 +29,12 @@ export default {
         ><img src="./icons/instagram_icon.png" alt="instagram"
       /></a>
     </div>
-    <div class="form">
-      <form
-        enctype="multipart/form-data"
-        method="POST"
-        @submit.prevent="onSubmit"
-      >
-        <div class="form-group">
-          <input
-            v-model="name"
-            type="text"
-            name="name"
-            placeholder="Your Name *"
-          />
-        </div>
-        <div class="form-group">
-          <input
-            v-model="email"
-            type="email"
-            name="email"
-            placeholder="Your Email *"
-          />
-        </div>
-        <div class="form-group">
-          <textarea
-            v-model="message"
-            type="text"
-            name="message"
-            id="message"
-            rows="6"
-            placeholder="Message *"
-          />
-        </div>
-        <button type="submit" :disabled="!submitDisabled">Send</button>
-
-        <p v-if="isSuccess">Message sent.</p>
-      </form>
-    </div>
   </div>
 </template>
 
 <style scoped>
 #contact {
   background-color: white;
-  /* border-radius: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;

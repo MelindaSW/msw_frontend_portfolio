@@ -45,6 +45,11 @@ export default {
 
     <ul class="icon-links">
       <li>
+        <a href="mailto:sandstrommelinda@gmail.com"
+          ><img src="./icons/email_icon.png" alt="email"
+        /></a>
+      </li>
+      <li>
         <a href="https://github.com/MelindaSW" target="_blank"
           ><img src="./icons/github_icon.png" alt="gihub"
         /></a>
