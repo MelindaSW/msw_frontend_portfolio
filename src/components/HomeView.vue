@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import ScrollIcon from "../components/ScrollIcon.vue"
+</script>
+
 <template lang="">
   <div id="home">
     <div id="head">
@@ -8,7 +12,9 @@
       <h2>Software developer</h2>
       <p>
         Hi and welcome! <br />I am a fullstack web developer, specialized in
-        React/Typescript, Node and Java. This is my portfolio.
+        React/Typescript, Node and Java. The intent of this page is to showcase
+        some of my personal projects and keep track my own development and
+        fields of interests.
       </p>
       <p>
         Here you can find examples of some of my
@@ -22,13 +28,10 @@
         >
         or <a href="mailto:sandstrommelinda@gmail.com">email</a>.
       </p>
+      <p><ScrollIcon /></p>
     </div>
   </div>
 </template>
-
-<script lang="ts">
-export default {}
-</script>
 
 <style scoped>
 #home {

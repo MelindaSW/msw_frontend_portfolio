@@ -105,7 +105,7 @@ img {
 }
 
 .tech {
-  background-color: #dfdfdf;
+  background-color: whitesmoke;
   color: #07090e;
   border-radius: 3px;
   margin-left: 5px;
@@ -122,12 +122,14 @@ img {
 }
 
 a {
-  background-color: #dfdfdf;
-  border-radius: 3px;
+  background-color: white;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   color: #455889;
   padding: 3px;
+  width: 60%;
+  margin: auto;
 }
 
 a:hover {

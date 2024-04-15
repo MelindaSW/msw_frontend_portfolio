@@ -33,7 +33,8 @@ export const projects = [
   {
     title: "Personal website",
     repo: "https://github.com/MelindaSW/melindasw.se-sourcecode",
-    description: "My previous portfolio and personal website. ",
+    description:
+      "My previous portfolio and personal website. Check out the gallery!",
     url: "https://melindasw.netlify.app/",
     tech: ["Vue.js 2", "Vue CLI", "Node", "JavaScript", "HTML/Sass"],
     img: "melindaswse.jpg",

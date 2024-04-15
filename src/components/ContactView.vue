@@ -29,6 +29,13 @@ export default {
         ><img src="./icons/instagram_icon.png" alt="instagram"
       /></a>
     </div>
+    <a id="homescrollicon" href="#home">
+      <img
+        class="scrollicon"
+        src="./icons/upscrollarrow_icon.png"
+        alt="scroll up"
+      />
+    </a>
   </div>
 </template>
 
@@ -44,6 +51,13 @@ export default {
   margin: auto;
   margin-bottom: 5rem;
   width: 80%;
+  position: relative;
+}
+
+#homescrollicon {
+  position: absolute;
+  right: 15px;
+  bottom: 4px;
 }
 
 .info {

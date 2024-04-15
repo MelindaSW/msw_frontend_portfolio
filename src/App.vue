@@ -4,12 +4,10 @@ import HomeView from "./components/HomeView.vue"
 import AboutView from "./components/AboutView.vue"
 import ProjectsView from "./components/ProjectsView.vue"
 import ContactView from "./components/ContactView.vue"
-import ScrollIcon from "./components/ScrollIcon.vue"
 </script>
 
 <template>
   <div id="main">
-    <ScrollIcon />
     <NavBar />
     <main>
       <HomeView />
