@@ -64,6 +64,15 @@ export const projects = [
     tech: ["Java", "Spring Boot", "Maven", "Lombok", "Swagger", "REST"],
     img: "pg1.png",
   },
+  {
+    title: "VR-gallery",
+    // repo: "https://github.com/MelindaSW/poetry-generator-api",
+    description:
+      "VR-gallery made with A-Frame as a short scool project. A 3D environment where you can walk around using the arrow keys and look at some of my illustrations. You need to use a computer for it to work.",
+    url: "https://melindasw.netlify.app/vr-gallery/gallery",
+    tech: ["HTML", "A-Frame"],
+    img: "vr-gallery.png",
+  },
   // {
   //   title: "Poetry Slack",
   //   repo: "https://github.com/wasse/slack-poem",
