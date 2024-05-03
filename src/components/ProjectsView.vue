@@ -26,7 +26,7 @@ export default {
           <div class="tech" v-for="(t, i) in p.tech" :key="i">{{ t }}</div>
         </div>
         <p class="links">
-          <a :href="p.repo">REPOSITORY</a>
+          <a v-if="p.repo" :href="p.repo">REPOSITORY</a>
           <a v-if="p.url" :href="p.url" target="_blank">VIEW IT LIVE</a>
         </p>
       </div>

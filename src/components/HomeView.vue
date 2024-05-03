@@ -18,8 +18,8 @@ import ScrollIcon from "../components/ScrollIcon.vue"
       </p>
       <p>
         Here you can find examples of some of my
-        <a href="#projects">projects</a> and get an overview
-        <a href="#about">of my skills</a>.
+        <a href="#projects">personal projects</a> and get an overview of
+        <a href="#about"> my skills</a>.
       </p>
       <p>
         If you want to get in touch, you can reach me via

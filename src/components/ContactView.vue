@@ -56,8 +56,8 @@ export default {
 
 #homescrollicon {
   position: absolute;
-  right: 15px;
-  bottom: 4px;
+  right: 10px;
+  top: 5px;
 }
 
 .info {
