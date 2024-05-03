@@ -50,13 +50,12 @@ export default {}
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 2.3rem;
   padding-bottom: 2.7rem;
   width: 80%;
 }
 
 h1 {
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 
 h2 {
@@ -64,7 +63,7 @@ h2 {
 }
 
 p {
-  padding: 1.5rem;
+  padding: 14px;
   width: 60%;
 }
 

@@ -105,7 +105,7 @@ ul {
 }
 
 .nav-links {
-  margin-top: 40px;
+  margin-top: -266px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
