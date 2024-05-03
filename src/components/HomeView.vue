@@ -66,11 +66,10 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 22px;
 }
 
 p {
-  font-size: 1rem;
   width: 80%;
   margin-top: 1.5rem;
   text-align: center;
@@ -93,7 +92,7 @@ a:hover {
   }
 
   #profilepic {
-    width: 330px;
+    width: 265px;
   }
 }
 
@@ -123,7 +122,7 @@ a:hover {
 
   p {
     text-align: left;
-    font-size: 1.1rem;
+    font-size: small;
   }
 
   #profilepic {
