@@ -34,10 +34,10 @@ export default {
       </li>
     </ul>
 
-    <a class="nav-link-home" href="#home">
-      <img src="./icons/home_icon.png" alt="home" />
-    </a>
     <div class="nav-links">
+      <a class="nav-link-home" href="#home">
+        <img src="./icons/home_icon.png" alt="home" />
+      </a>
       <a class="nav-link" href="#about">About</a>
       <a class="nav-link" href="#projects">Projects</a>
       <a class="nav-link" href="#contact">Contact</a>
@@ -105,7 +105,6 @@ ul {
 }
 
 .nav-links {
-  margin-top: -266px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -170,9 +169,6 @@ a:hover {
   }
 
   nav {
-    /* position: absolute;
-    top: 0; */
-    /* position: fixed; */
     position: sticky;
     top: 0;
     left: 0;

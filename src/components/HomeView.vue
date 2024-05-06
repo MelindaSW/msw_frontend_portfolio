@@ -41,6 +41,8 @@ import ScrollIcon from "../components/ScrollIcon.vue"
   padding-top: 2rem;
   padding-bottom: 2.7rem;
   color: white;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #head {
@@ -62,6 +64,7 @@ import ScrollIcon from "../components/ScrollIcon.vue"
 
 h1 {
   text-align: center;
+  color: rgb(181, 242, 250);
 }
 
 h2 {
@@ -79,6 +82,7 @@ a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  color: rgb(181, 242, 250);
 }
 
 a:hover {
@@ -98,7 +102,7 @@ a:hover {
 
 @media (min-width: 800px) {
   #home {
-    height: 100vh;
+    min-height: 100vh;
     width: 60%;
   }
 }
@@ -107,6 +111,7 @@ a:hover {
   #home {
     flex-direction: row;
     width: 70%;
+    min-height: 100%;
   }
 
   #presentation {

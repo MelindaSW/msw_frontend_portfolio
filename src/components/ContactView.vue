@@ -152,7 +152,7 @@ img:hover {
 
 @media (max-width: 1500px) {
   #contact {
-    width: 100%;
+    width: 90%;
   }
 }
 
