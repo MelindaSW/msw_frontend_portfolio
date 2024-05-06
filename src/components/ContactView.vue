@@ -57,7 +57,7 @@ export default {
 #homescrollicon {
   position: absolute;
   right: 10px;
-  top: 5px;
+  bottom: 2px;
 }
 
 .info {
@@ -152,7 +152,7 @@ img:hover {
 
 @media (max-width: 1500px) {
   #contact {
-    width: 100%;
+    width: 90%;
   }
 }
 

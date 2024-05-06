@@ -17,8 +17,33 @@ export default {
 <template>
   <div id="projects">
     <h1>Projects</h1>
-    <div class="grid">
-      <div class="projectcard griditem" v-for="(p, i) in projects" :key="i">
+    <v-sheet
+      id="vsheet"
+      class="mx-auto slide-group-sheet"
+      max-width="90%"
+      elevation="5"
+    >
+      <v-slide-group id="slidegroup" class="pa-4" show-arrows="true">
+        <v-slide-item v-for="(p, i) in projects" :key="i" disabled>
+          <div class="projectcard">
+            <img :src="getImageUrl(p.img)" :alt="p.title" />
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.description }}</p>
+            <div id="techp">
+              <div class="tech" v-for="(t, i) in p.tech" :key="i">
+                {{ t }}
+              </div>
+            </div>
+            <p class="links">
+              <a v-if="p.repo" :href="p.repo">REPOSITORY</a>
+              <a v-if="p.url" :href="p.url" target="_blank">VIEW IT LIVE</a>
+            </p>
+          </div>
+        </v-slide-item>
+      </v-slide-group>
+    </v-sheet>
+    <div class="projects-mobile">
+      <div class="projectcard" v-for="(p, i) in projects" :key="i">
         <img :src="getImageUrl(p.img)" :alt="p.title" />
         <h3>{{ p.title }}</h3>
         <p>{{ p.description }}</p>
@@ -37,20 +62,25 @@ export default {
 <style scoped>
 #projects {
   background-color: white;
-  /* border-radius: 10px; */
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   margin-top: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2.7rem;
+  max-width: 90%;
   margin: 4rem auto;
+  min-height: 100vh;
+}
+
+.projects-mobile {
+  display: none;
 }
 
 h1 {
-  margin-bottom: 2rem;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1.6em;
+  font-weight: bold;
 }
 
 h3 {
@@ -59,29 +89,27 @@ h3 {
   margin-top: 1rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
-  grid-gap: 5px;
-}
-
-.griditem {
-  margin: auto;
+#vsheet {
+  min-height: min-content;
+  margin-top: 1em;
+  border-radius: 4px;
 }
 
 .projectcard {
   background-color: #180e41;
   color: white;
-  /* border-top: 3px solid #455889;
-  border-left: 3px solid #455889; */
   border-radius: 3px;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  width: 80%;
+  width: 400px;
+  min-height: 600px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 2rem;
+  margin-right: 30px;
+  position: relative;
 }
 
 p {
@@ -90,7 +118,6 @@ p {
 }
 
 img {
-  /* border-radius: 0.5rem; */
   border: 2px solid #dfdfdf;
   width: 100%;
   aspect-ratio: 18 / 9;
@@ -118,7 +145,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
 }
 
 a {
@@ -133,9 +163,14 @@ a {
 }
 
 a:hover {
-  /* border: 1px solid #455889; */
   background-color: #a8bcf044;
   color: white;
+}
+
+@media (mid-width: 1000px) {
+  #vsheet {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {
@@ -143,8 +178,27 @@ a:hover {
     width: 80%;
     font-size: larger;
   }
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+@media (max-width: 1000px) {
+  #vsheet {
+    display: none;
+  }
+
+  #projects {
+    padding-bottom: 2.7rem;
+  }
+
+  .projects-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .projectcard {
+    margin: auto;
+    width: 90%;
+    min-height: 600px;
   }
 }
 </style>

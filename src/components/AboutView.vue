@@ -50,26 +50,33 @@ export default {}
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 2.7rem;
+  padding-bottom: 17px;
+  padding-top: 17px;
   width: 80%;
+  min-height: 100vh;
 }
 
 h1 {
-  /* font-size: 2em; */
+  font-size: 1.5em;
+  font-weight: bold;
+  /* margin-top: 20px; */
 }
 
 h2 {
   text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 p {
-  padding: 14px;
+  margin: 1em;
   width: 60%;
+  font-size: 1em;
 }
 
 ul {
   list-style: none;
-  padding-bottom: 1.2rem;
+  padding-bottom: 1.2em;
 }
 
 li {
@@ -77,7 +84,7 @@ li {
 }
 
 .badge {
-  width: 150px;
+  width: 17%;
 }
 
 @media (max-width: 800px) {
@@ -92,6 +99,9 @@ li {
   }
   p {
     width: 90%;
+  }
+  .badge {
+    width: 30%;
   }
 }
 </style>
