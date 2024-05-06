@@ -17,7 +17,12 @@ export default {
 <template>
   <div id="projects">
     <h1>Projects</h1>
-    <v-sheet id="vsheet" class="mx-auto slide-group-sheet" max-width="90%">
+    <v-sheet
+      id="vsheet"
+      class="mx-auto slide-group-sheet"
+      max-width="90%"
+      elevation="5"
+    >
       <v-slide-group id="slidegroup" class="pa-4" show-arrows="true">
         <v-slide-item v-for="(p, i) in projects" :key="i" disabled>
           <div class="projectcard">
