@@ -41,7 +41,7 @@ import ScrollIcon from "../components/ScrollIcon.vue"
   padding-top: 2rem;
   padding-bottom: 2.7rem;
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -89,29 +89,11 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (min-width: 561px) {
-  #home {
-    width: 75%;
-    margin: auto;
-  }
-
-  #profilepic {
-    width: 265px;
-  }
-}
-
-@media (min-width: 800px) {
-  #home {
-    min-height: 100vh;
-    width: 60%;
-  }
-}
-
-@media (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
   #home {
     flex-direction: row;
     width: 70%;
-    min-height: 100%;
+    height: 100%;
   }
 
   #presentation {
@@ -133,6 +115,31 @@ a:hover {
   #profilepic {
     width: 320px;
     padding-bottom: 5rem;
+  }
+}
+
+@media screen and (min-width: 561px) {
+  #home {
+    width: 75%;
+    margin: auto;
+    height: 100%;
+  }
+
+  #profilepic {
+    width: 265px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #home {
+    height: 100%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #home {
+    height: 100%;
   }
 }
 </style>

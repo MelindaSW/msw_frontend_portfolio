@@ -175,7 +175,6 @@ a:hover {
 
 @media (min-width: 800px) {
   #projects {
-    width: 80%;
     font-size: larger;
   }
 }
@@ -183,6 +182,12 @@ a:hover {
 @media (max-width: 1000px) {
   #vsheet {
     display: none;
+  }
+
+  .links {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
   }
 
   #projects {
