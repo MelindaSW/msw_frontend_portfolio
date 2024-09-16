@@ -52,14 +52,13 @@ export default {}
   text-align: center;
   padding-bottom: 17px;
   padding-top: 17px;
-  width: 80%;
+  max-width: 1400px;
   min-height: 100vh;
 }
 
 h1 {
   font-size: 1.5em;
   font-weight: bold;
-  /* margin-top: 20px; */
 }
 
 h2 {
@@ -87,13 +86,13 @@ li {
   width: 17%;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   #about {
     width: 100%;
   }
-}
+} */
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   #about {
     height: 100%;
   }
@@ -103,5 +102,5 @@ li {
   .badge {
     width: 30%;
   }
-}
+} */
 </style>

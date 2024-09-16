@@ -1,0 +1,97 @@
+export const projects = [
+  {
+    title: "This website",
+    repo: "https://github.com/MelindaSW/msw_frontend_portfolio",
+    description: "My current website and portfolio.",
+    url: "https://melindasportfolio.netlify.app/",
+    tech: ["Vue.js 3", "Vite", "Node", "Typescript", "HTML/CSS"],
+    img: "portfolio.png",
+  },
+  {
+    title: "Dnd AI",
+    repo: "https://github.com/MelindaSW/my-dnd-ai-app",
+    description: "A DnD character backstory creator. Using the OpenAI api.",
+    url: "https://msw-dndai.netlify.app/",
+    tech: [
+      "React.js",
+      "OpenAI",
+      "Vite",
+      "Typescript",
+      "Material UI",
+      "HTML/CSS",
+    ],
+    img: "dndai.png",
+  },
+  {
+    title: "Movie search",
+    repo: "https://github.com/MelindaSW/melindas-movies",
+    description: "Search for movies in the OmdbApi.",
+    url: "https://msw-movies.netlify.app/",
+    tech: ["React.js", "react-redux", "Typescript", "Vite", "HTML/CSS"],
+    img: "movies.png",
+  },
+  {
+    title: "Personal website",
+    repo: "https://github.com/MelindaSW/melindasw.se-sourcecode",
+    description:
+      "My previous portfolio and personal website. Check out the gallery!",
+    url: "https://melindasw.netlify.app/",
+    tech: ["Vue.js 2", "Vue CLI", "JavaScript", "HTML/Sass", "Vuetify"],
+    img: "melindaswse.jpg",
+  },
+  {
+    title: "My todos",
+    repo: "https://github.com/MelindaSW/todo-app-react",
+    description: "A todo app created with React and react-redux. ",
+    url: "https://mytodos-msw.netlify.app/",
+    tech: ["React.js", "Typescript", "react-redux", "Vite", "Css", "HTML"],
+    img: "mytodos.jpg",
+  },
+  {
+    title: "Haiku generator",
+    repo: "https://github.com/MelindaSW/poetry-generator-api",
+    description:
+      "A small haiku generator REST api with my syllable count algorithm.",
+    url: "",
+    tech: ["Java", "Spring Boot", "Maven", "Lombok", "Swagger", "REST"],
+    img: "pg1.png",
+  },
+  {
+    title: "VR-gallery",
+    description:
+      "VR-gallery made with A-Frame as a short scool project. A 3D environment where you can walk around using the arrow keys and look at some of my illustrations.",
+    url: "https://melindasw.netlify.app/vr-gallery/gallery",
+    tech: ["HTML", "A-Frame"],
+    img: "vr-gallery.png",
+  },
+  // {
+  //   title: "Poetry Slack",
+  //   repo: "https://github.com/wasse/slack-poem",
+  //   description:
+  //     "A full stack web applicaion for a group project at YRGO. It generates different kinds of poetry from the text content of the channels and with the help of Slacks API, the user can then choose to send it to slack.",
+  //   url: "",
+  //   tech: [
+  //     "JavaScript",
+  //     "React.js",
+  //     "Java EE",
+  //     "TomEE (Tomcat)",
+  //     "REST",
+  //     "Maven",
+  //     "Swagger",
+  //     "Postgresql",
+  //     "Mobx",
+  //     "Bulma",
+  //     "Sass",
+  //     "HTML",
+  //   ],
+  //   img: "ps2.png",
+  // },
+  // {
+  //     title: "",
+  //     repo: "",
+  //     description: "",
+  //     url: "",
+  //     tech: [""],
+  //     img: ""
+  // },
+]

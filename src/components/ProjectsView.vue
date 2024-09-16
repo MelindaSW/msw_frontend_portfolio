@@ -67,7 +67,7 @@ export default {
   flex-direction: column;
   text-align: center;
   margin-top: 3rem;
-  max-width: 90%;
+  max-width: 1400px;
   margin: 4rem auto;
   min-height: 100vh;
 }
@@ -91,6 +91,7 @@ h3 {
 
 #vsheet {
   min-height: min-content;
+  max-width: 90%;
   margin-top: 1em;
   border-radius: 4px;
 }
@@ -167,12 +168,6 @@ a:hover {
   color: white;
 }
 
-@media (mid-width: 1000px) {
-  #vsheet {
-    display: none;
-  }
-}
-
 @media (min-width: 800px) {
   #projects {
     font-size: larger;
@@ -202,7 +197,6 @@ a:hover {
 
   .projectcard {
     margin: auto;
-    width: 90%;
     min-height: 600px;
   }
 }
