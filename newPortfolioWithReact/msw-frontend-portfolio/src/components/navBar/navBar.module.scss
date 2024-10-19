@@ -1,0 +1,155 @@
+@use '../../styles/colors' as c;
+@use '../../styles/variables' as v;
+
+.nav {
+  background-color: c.$nav-backround;
+}
+
+.nav {
+  width: 110px;
+  min-height: 100%;
+  background: #ffffff;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+}
+
+.linkImg {
+  width: 35px;
+  height: 35px;
+  margin-top: 19px;
+  align-self: flex-end;
+  transition: transform 0.5s;
+}
+
+.linkImgHome {
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.iconLinks {
+  margin-bottom: 70px;
+}
+
+img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.mobileNav {
+  display: none;
+}
+
+@include v.respond-to-xl-mobile {
+  .nav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+    width: 100%;
+    background-color: c.$nav-backround;
+  }
+}
+
+// a:hover {
+//   color: #6380ca;
+// }
+
+// .icon-links {
+//   margin-bottom: 78px;
+// }
+
+// @media (max-width: 560px) {
+//   .burger_menu {
+//     display: block;
+//     margin: auto;
+//     cursor: pointer;
+//   }
+
+//   .burger-links {
+//     border: 2px solid black;
+//     display: block;
+//     position: fixed;
+//     z-index: 100;
+//     left: 25px;
+//     top: 46px;
+//     background-color: #ffffff;
+//     padding: 16px;
+//     text-align: center;
+//   }
+
+//   .b-link {
+//     text-decoration: none;
+//     color: black;
+//     text-transform: uppercase;
+//     margin: 20px;
+//   }
+
+//   nav {
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//     flex-direction: row;
+//     height: 55px;
+//     width: 100%;
+//     justify-content: center;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     border-bottom: 1.8px solid black;
+//   }
+
+//   .nav-link-home {
+//     display: none;
+//   }
+
+//   .nav-links {
+//     display: none;
+//   }
+
+//   .icon-links > li {
+//     display: inline;
+//     margin: 0px;
+//   }
+
+//   img {
+//     margin: 0px 0px 0px 20px;
+//   }
+
+//   a {
+//     margin: 0px;
+//   }
+// }
+
+// .navlinks > a {
+//   /* transform: rotate(-90deg); */
+//   text-transform: uppercase;
+//   margin-bottom: 55px;
+//   margin-top: 10px;
+//   text-decoration: none;
+//   transition: color 0.5s;
+// }
+
+// a.nav-link {
+//   color: black;
+//   /* transform: rotate(-90deg); */
+//   text-transform: uppercase;
+//   margin-bottom: 55px;
+//   margin-top: 10px;
+//   text-decoration: none;
+//   transition: color 0.5s;
+// }
+
+// img {
+
+// }
